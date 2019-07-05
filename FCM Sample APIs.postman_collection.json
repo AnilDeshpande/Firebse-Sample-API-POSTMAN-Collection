@@ -1,0 +1,86 @@
+{
+  "id": "7b9ab127-c12c-6c80-7060-59bbacc45264",
+  "name": "FCM Sample APIs",
+  "description": "",
+  "order": [
+    "b05993e1-146d-b063-dbe8-ae20690efae1",
+    "158dce85-8659-70ac-6f5d-7ffbac3ba25d"
+  ],
+  "folders": [],
+  "folders_order": [],
+  "timestamp": 1511419780805,
+  "owner": "112549",
+  "public": false,
+  "requests": [
+    {
+      "id": "158dce85-8659-70ac-6f5d-7ffbac3ba25d",
+      "headers": "Authorization: key=<Enter your server key from Firebase messaging settings>\nContent-Type: application/json\n",
+      "headerData": [
+        {
+          "key": "Authorization",
+          "value": "key=<Enter your server key from Firebase messaging settings>",
+          "description": "",
+          "enabled": true
+        },
+        {
+          "key": "Content-Type",
+          "value": "application/json",
+          "description": "",
+          "enabled": true
+        }
+      ],
+      "url": "https://fcm.googleapis.com/fcm/send",
+      "queryParams": [],
+      "preRequestScript": null,
+      "pathVariables": {},
+      "pathVariableData": [],
+      "method": "POST",
+      "data": [],
+      "dataMode": "raw",
+      "tests": null,
+      "currentHelper": "normal",
+      "helperAttributes": {},
+      "time": 1559477206498,
+      "name": "FCM Message POST - WITH NOTIFICATION",
+      "description": "Send Direct Message to Device with given id. HTTP Request.",
+      "collectionId": "7b9ab127-c12c-6c80-7060-59bbacc45264",
+      "responses": [],
+      "rawModeData": "{\n\t\"to\" : \"<User the token that you receive from FCM in mobile app here>\",\n\t\"collapse_key\" : \"type_a\",\n\t\"notification\" : {\n     \"body\" : \"This is a justa sample notification\",\n     \"title\": \"FCM Notification\"\n\t},\n\t\"data\" : {\n     \"body\" : \"Body of Your Notification in Data\",\n     \"title\": \"Title of Your Notification in Title\",\n     \"key_1\" : \"Value for key_1\",\n     \"key_2\" : \"Value for key_2\"\n\t}\n}"
+    },
+    {
+      "id": "b05993e1-146d-b063-dbe8-ae20690efae1",
+      "headers": "Authorization: key=<Enter your server key from Firebase messaging settings>\nContent-Type: application/json\n",
+      "headerData": [
+        {
+          "key": "Authorization",
+          "value": "key=<Enter your server key from Firebase messaging settings>",
+          "description": "",
+          "enabled": true
+        },
+        {
+          "key": "Content-Type",
+          "value": "application/json",
+          "description": "",
+          "enabled": true
+        }
+      ],
+      "url": "https://fcm.googleapis.com/fcm/send",
+      "queryParams": [],
+      "preRequestScript": null,
+      "pathVariables": {},
+      "pathVariableData": [],
+      "method": "POST",
+      "data": [],
+      "dataMode": "raw",
+      "tests": null,
+      "currentHelper": "normal",
+      "helperAttributes": {},
+      "time": 1554097895294,
+      "name": "FCM Message POST - WITHOUT_NOTIFICATION",
+      "description": "Send Direct Message to Device with given id. HTTP Request.",
+      "collectionId": "7b9ab127-c12c-6c80-7060-59bbacc45264",
+      "responses": [],
+      "rawModeData": "{\n\t\"to\" : \"<User the token that you receive from FCM in mobile app here>\",\n\t\"collapse_key\" : \"type_a\",\n\t\"data\" : {\n\t\t\"body\" : \"First Notification\",\n\t\t\"title\": \"ALT App Testing\",\n\t\t\"key_1\" : \"Data for key one\",\n\t\t\"key_2\" : \"Hellowww\"\n\t}\n}"
+    }
+  ]
+}
